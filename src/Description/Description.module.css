@@ -1,0 +1,70 @@
+.bigBox{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.379);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.box{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.textBox{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+   color: rgb(196, 194, 194);
+}
+.textBox p{
+    margin: 5px;
+}
+.imgBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgBox p{
+    margin: 0;
+   color: rgb(196, 194, 194);
+   font-size: 20px;
+}
+.imgBox h1{
+   margin: 0;
+   color: rgb(196, 194, 194);
+   text-align: center;
+}
+.imgBox img{
+    border-radius: 5px;
+    height: 250px;
+    width: 225px;
+    margin: 10px;
+}
+.xMark{
+    position: absolute;
+    background-image: url('./src/assets/x_mark.png');
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    right: 1%;
+    top: 4%;
+    transition: .25s;
+}
+.xMark:hover{
+    cursor: pointer;
+    filter: invert();
+
+}
