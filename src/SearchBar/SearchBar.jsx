@@ -33,7 +33,7 @@ function SearchBar(){
     }
 
     async function getData(){
-        const apiURL = `http://www.omdbapi.com/?apikey=${key}&t=${searchTarget}`;
+        const apiURL = `https://www.omdbapi.com/?apikey=${key}&t=${searchTarget}`;
         const kq = await fetch(apiURL);
         console.log(kq);
         if(!kq.ok) throw new Error("Could not fetch data");
