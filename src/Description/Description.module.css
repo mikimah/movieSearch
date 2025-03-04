@@ -22,7 +22,7 @@
 .textBox{
     display: flex;
     flex-direction: column;
-    
+    position: relative;
     justify-content: center;
     width: 75%;
     height: 100%;
@@ -41,20 +41,24 @@
    color: rgb(196, 194, 194);
    font-size: 20px;
 }
-.imgBox h1{
+.textBox h1{
+    white-space: nowrap;
+    position: absolute;
    margin: 0;
    color: rgb(196, 194, 194);
    text-align: center;
+   top:10%
+   
 }
 .imgBox img{
     border-radius: 5px;
-    height: 250px;
+    height: 280px;
     width: 225px;
     margin: 10px;
 }
 .xMark{
     position: absolute;
-    background-image: url('./src/assets/x_mark.png');
+    background-image: url('../assets/xMark.png');
     width: 40px;
     height: 40px;
     background-position: center;
